@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --babypowder:#F7F7F2;
+    --ebony: #56604F;
+    --eerieblack: #222725;
+    --night: #121113;
+}
+
+body{
+    background-color: var(--babypowder);
+}
+
+section {
+    padding: 50px 10%;
+}
+
+*::selection {
+    color: var(--babypowder);
+    background: var(--babypowder);
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: var(--babypowder);
+    color: var(--night);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 41px rgb(14, 55, 54 / 14%);
+    padding: 20px 10%;
+    transition: 0.2s;
+}
+.logo {
+    align-items: center;
+}
+.logo img {
+    margin: 10px;
+    width: 40px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    right: -100%;
+}
+
+.navbar a {
+    font-size: 25px;
+    padding: 19px 20px;
+    color: var(--night);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar a:hover {
+    color: var(--ebony);
+}
+
+#menuicon {
+    font-size: 24px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    display: none;
+}
+
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 100px;
+    padding-top: 13rem;
+    color: var(--night);
+    font-weight: 500;
+    text-transform: uppercase;
+    border-left: 5px solid var(--ebony);
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    color: var(--babypowder);
+    background-color: var(--babypowder);
+    z-index: 1000;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff5f5;
+    gap: 1rem;
+}
+.hometext {
+    font-weight: 400;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-size: 69px;
+    flex: 1 1 17rem;
+}
+.heroimg {
+    flex: 0.25 1 17rem;
+}
+
+.heroimg img{
+    width: 300px;
+}
+
+.heading span {
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--night);
+}
+
+.heading {
+    border-bottom: 3px solid var(--night); 
+    padding-bottom: 18px;
+    margin-bottom: 3rem;
+}
+
+.procon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.procon span{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--night);
+}
+.procon .box {
+    flex: 1 1 10rem;
+    display: flex;
+    text-align: baseline;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.procon img{
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    object-fit: none;
+    object-position:  20% 0;
+    display: block;
+    width: 340px;
+    height: 558px;
+}
+
+.aboutext {
+    font-weight: 400;
+    font-size: 30px;
+    margin-right: 2rem;
+}
+
+.aboutuses {
+    font-weight: 400;
+    font-size: 21px;
+    margin-top: 4rem;
+}
+
+.boxcon {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.boxcon #contactform {
+    margin-left: 5rem;
+}
+
+.boxcon span {
+    font-weight: 400;
+    font-size: 30px;
+}
+.boxcon p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.boxcon input {
+    font-weight: 400;
+    width: 297px;
+    height: 25px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    border: 2.5px solid var(--eerieblack);
+    margin-bottom: 2rem;
+}
+
+.boxcon #message {
+    height: 50px;
+    width: 600px;
+}
+
+.boxcon #email {
+    width: 600px;
+}
+
+.boxcon button{
+    display: flex;
+    margin-left: auto;
+    font-weight: 500;   
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 2px solid var(--eerieblack);
+    margin-bottom: 2rem;
+}
+.footcon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.social {
+    margin-left: auto;
+}
+.social a {
+    font-size: 27px;
+    margin: 0.5rem;
+}
+.social a .bx {
+    padding: 5px;
+    color: var(--night);
+    background-color: transparent;
+    border-radius: 50%;
+}
+.social a .bx:hover {
+    color: var(--babypowder);
+    background-color: var(--ebony);
+}
+.foot p {
+    font-weight: 400;
+    font-size: 20px;
+}
